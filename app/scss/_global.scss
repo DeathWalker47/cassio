@@ -1,0 +1,58 @@
+
+body,
+html{
+  height: 100%;
+}
+body{
+  position: relative;
+  color: $white;
+  font-size: 16px;
+  line-height: 28px;
+  @extend %roboto-400;
+}
+
+//Класс, для того, чтоб страница не скроллилась после открытия меню
+body.hidden{
+  overflow: hidden;
+}
+
+.wrapper{
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  min-height: 100%;
+}
+
+.main{
+  flex-grow: 1;
+}
+
+.content-container {
+  max-width: 1710px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.container{
+  max-width: 1170px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.visually-hidden {
+	position: absolute !important;
+	clip: rect(1px 1px 1px 1px);
+	clip: rect(1px, 1px, 1px, 1px);
+	padding:0 !important;
+	border:0 !important;
+	height: 1px !important; 
+	width: 1px !important; 
+	overflow: hidden;
+}
+
+.title{
+  @extend %play-700;
+  font-size: 42px;
+  line-height: 66px;
+  color: $title;
+}
