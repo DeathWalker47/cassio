@@ -15,7 +15,9 @@ body{
 body.hidden{
   overflow: hidden;
 }
-
+.home {
+  background-color: $main-bg;
+}
 .wrapper{
   display: flex;
   flex-direction: column;
@@ -27,7 +29,7 @@ body.hidden{
   flex-grow: 1;
 }
 
-.content-container {
+.container-content {
   max-width: 1710px;
   padding: 0 15px;
   margin: 0 auto;
@@ -54,5 +56,18 @@ body.hidden{
   @extend %play-700;
   font-size: 42px;
   line-height: 66px;
+  color: $title;
+}
+
+.text-up {
+  display: block;
+  text-transform: uppercase;
+  font-size: 13px;
+  line-height: 24px;
+  letter-spacing: 2px;
+}
+
+.text-up--fill {
+  @extend %roboto-700;
   color: $title;
 }

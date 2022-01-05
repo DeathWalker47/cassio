@@ -7,13 +7,246 @@
   <link rel="stylesheet" href="css/style.min.css">
   <title>Document</title>
 </head>
-<body>
+<body class="home">
   <div class="wrapper">
-    
+    <header class="header">
+  <div class="container-content header__container-content">
+    <a href="index.html" class="logo">
+      <img src="./images/logo.png" alt="logo">
+    </a>
+    <div class="header__burger">
+      <button class="header__burger-btn">
+        <svg width="30" height="10" viewBox="0 0 30 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect width="30" height="2" fill="white"/>
+          <rect y="8" width="30" height="2" fill="white"/>
+        </svg>
+      </button>
+    </div>
+    <ul class="social">
+      <li class="social__item">
+        <a href="#" class="social__link">
+          <svg class="social__img">
+            <use xlink:href="./images/sprite.svg#fb"></use>
+          </svg>
+        </a>
+      </li>
+      <li class="social__item">
+        <a href="#" class="social__link">
+          <svg class="social__img">
+            <use xlink:href="./images/sprite.svg#inst"></use>
+          </svg>
+        </a>
+      </li>
+      <li class="social__item">
+        <a href="#" class="social__link">
+          <svg class="social__img">
+            <use xlink:href="./images/sprite.svg#be"></use>
+          </svg>
+        </a>
+      </li>
+    </ul>
+  </div>
+</header>
+
+
     <main class="main">
-      
+    <section class="top">
+  <div class="container top__container">
+    <span class="top__subtitle text-up">
+      Interior design agency
+    </span>
+    <h1 class="top__title">
+      Cassio
+    </h1>
+  </div>
+  <div class="top__info-links info-links">
+    <div class="info-links__item">
+      <span class="info-links__number text-up">
+        001
+      </span>
+      <h2 class="info-links__title">
+        Interior
+      </h2>
+      <a href="#" class="info-links__link text-up text-up--fill">
+        Learn More
+      </a>
+    </div>
+    <div class="info-links__item">
+      <span class="info-links__number text-up">
+        002
+      </span>
+      <h2 class="info-links__title">
+        Architecture
+      </h2>
+      <a href="#" class="info-links__link text-up text-up--fill">
+        Learn More
+      </a>
+    </div>
+    <div class="info-links__item">
+      <span class="info-links__number text-up">
+        003
+      </span>
+      <h2 class="info-links__title">
+        Decorations
+      </h2>
+      <a href="#" class="info-links__link text-up text-up--fill">
+        Learn More
+      </a>
+    </div>
+  </div>
+</section>
+    <section class="about-info">
+  <div class="about-info__inner">
+    <div class="about-info__images">
+      <picture class="about-info__img">
+        <source srcset="./images/photo-1.webp">
+        <img src="./images/photo-1.jpg" alt="photo">
+      </picture>
+    </div>
+    <div class="about-info__content">
+      <p class="about-info__text">
+        We are Cassio – Interior Design & Architecture Agency. Our Works Create Emotion and Impact People Lifes.
+      </p>
+      <ul class="about-info__numbers">
+        <li class="about-info__number">
+          <p class="about-info__num">
+            06
+          </p>
+          <span class="about-info__num-descr">
+            Years of Experience
+          </span>
+        </li>
+        <li class="about-info__number">
+          <p class="about-info__num">
+            43
+          </p>
+          <span class="about-info__num-descr">
+            Happy Clients
+          </span>
+        </li>
+        <li class="about-info__number about-info__number--bottom">
+          <p class="about-info__num">
+            12
+          </p>
+          <span class="about-info__num-descr">
+            Times Awarded
+          </span>
+        </li>
+        <li class="about-info__number about-info__number--bottom">
+          <p class="about-info__num">
+            57
+          </p>
+          <span class="about-info__num-descr">
+            Successful Cases
+          </span>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+    <section class="laters-work">
+  <div class="container laters-work__container">
+    <span class="laters-work__subtitle text-up">
+      Our latest works
+    </span>
+    <h2 class="laters-work__title title">
+      We identify the essential around new visual perspectives
+    </h2>
+  </div>
+  <div class="slider-work">
+    <div class="slider-work__item">
+      <div class="slider-work__image">
+        <picture class="slider-work__img">
+          <source srcset="./images/photo-2.webp">
+          <img src="./images/photo-2.jpg" alt="slider photo">
+        </picture>
+      </div>
+      <div class="slider-work__box slider-work__box--dark">
+        <p class="slider-work__descr text-up">
+          Interior Design
+        </p>
+        <h3 class="slider-work__title">
+          <a href="#" class="slider-work__title-link title">
+            Platinum
+          </a>
+        </h3>
+      </div>
+    </div>
+    <div class="slider-work__item">
+      <div class="slider-work__image">
+        <picture class="slider-work__img">
+          <source srcset="./images/photo-3.webp">
+          <img src="./images/photo-3.jpg" alt="slider photo">
+        </picture>
+      </div>
+      <div class="slider-work__box slider-work__box--dark">
+        <p class="slider-work__descr text-up">
+          House Interior
+        </p>
+        <h3 class="slider-work__title">
+          <a href="#" class="slider-work__title-link title">
+            Luxury
+          </a>
+        </h3>
+      </div>
+    </div>
+    <div class="slider-work__item">
+      <div class="slider-work__image">
+        <picture class="slider-work__img">
+          <source srcset="./images/photo-4.webp">
+          <img src="./images/photo-4.jpg" alt="slider photo">
+        </picture>
+      </div>
+      <div class="slider-work__box slider-work__box--dark">
+        <p class="slider-work__descr text-up">
+          Hotel Interior
+        </p>
+        <h3 class="slider-work__title">
+          <a href="#" class="slider-work__title-link title">
+            Royal King Suite
+          </a>
+        </h3>
+      </div>
+    </div>
+    <div class="slider-work__item">
+      <div class="slider-work__image">
+        <picture class="slider-work__img">
+          <source srcset="./images/photo-5.webp">
+          <img src="./images/photo-5.jpg" alt="slider photo">
+        </picture>
+      </div>
+      <div class="slider-work__box slider-work__box--dark">
+        <p class="slider-work__descr text-up">
+          Apartments Interior
+        </p>
+        <h3 class="slider-work__title">
+          <a href="#" class="slider-work__title-link title">
+            Elegant Room
+          </a>
+        </h3>
+      </div>
+    </div>
+  </div>
+</section>
     </main>
-    
+    <footer class="footer">
+  <div class="container-content footer__container-content">
+    <p class="footer__copy">
+      © 2020 Cassio – Modern Architecture Figma Template. Designed by Artem Semkin.
+    </p>
+    <div class="footer__links">
+      <a href="#" class="footer__link">
+        Terms of Usage
+      </a>
+      <a href="#" class="footer__link">
+        Privacy Policy
+      </a>
+      <a href="#" class="footer__link">
+        Cookies Policy
+      </a>
+    </div>
+  </div>
+</footer>
   </div>
   <script src="js/main.min.js"></script>
 </body>

@@ -1,0 +1,25 @@
+.footer {
+  &__container-content {
+    @include flex-all-sb;
+    padding: 80px 0;
+    border-top: 1px solid rgba($color: $silver, $alpha: .21);
+    color: $gray;
+    font-size: 13px;
+    line-height: 24px;
+  }
+  &__links {
+   display: flex;
+  }
+  &__link {
+    display: block;
+    border-bottom: 1px solid #979797;
+    transition: all .2s linear;
+    &:hover {
+      color: $accent;
+      border-color: $accent;
+    }
+    &:not(:last-child) {
+      margin-right: 34px;
+    }
+  }
+}

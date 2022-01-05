@@ -7,11 +7,13 @@
   <link rel="stylesheet" href="css/style.min.css">
   <title>Document</title>
 </head>
-<body>
+<body class="home">
   <div class="wrapper">
     @include('parts/_header.html')
     <main class="main">
-      
+    @include('parts/_home-top.html')
+    @include('parts/_home-about.html')
+    @include('parts/_laters-work.html')
     </main>
     @include('parts/_footer.html')
   </div>

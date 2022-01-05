@@ -1,9 +1,18 @@
-@import 'vars';
-@import 'fonts';
-@import 'reset';
-@import 'libs';
-@import 'global';
-@import 'mixins';
+@import "vars";
+@import "fonts";
+@import "reset";
+@import "libs";
+@import "global";
+@import "mixins";
+
+//Большие компоненты страницы
+@import "components/header";
+@import "components/footer";
+
+//Компоненты главной страницы
+@import "components/home-top";
+@import "components/home-about";
+@import "components/laters-work";
 
 
-@import 'media';
+@import "media";
