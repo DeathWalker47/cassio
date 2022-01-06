@@ -1,10 +1,23 @@
 .top {
+  position: relative;
   background-image: url('../images/bg-1.jpg');
   background-image: url('../images/bg-1.webp');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   min-height: 100vh;
+  z-index: 1;
+
+  &::before {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba($color: $main-bg, $alpha: .5);
+    z-index: -1;
+  }
   &__container {
     padding-top: 466px;
     padding-bottom: 87px;
@@ -51,14 +64,15 @@
   &__link {
     position: relative;
     padding-right: 10px;
+    display: inline-block;
     &::before {
       position: absolute;
       content: '';
-      background-image: url('../../images/icons/arrow-right.svg');
+      background-image: url('../images/svg/arrow-right.svg');
       background-repeat: no-repeat;
       width: 20px;
       height: 20px;
-      top: 0;
+      top: 5px;
       right: -29px;
     }
   }

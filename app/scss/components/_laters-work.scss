@@ -1,5 +1,5 @@
 .laters-work {
-
+  padding-bottom: 206px;
   &__container {
     margin-bottom: 100px;
   }
@@ -12,12 +12,32 @@
     color: $pearl;
   }
 }
+// .swiper-slide-active {
+//   .slider-work__box {
+//     transition: all .5s linear;
+//     bottom: 0;
+//   }
+//   .slider-work__title {
+//     &::before {
+//       opacity: 1;
+//       transition: opacity .2s linear 1.4s;
+//     }
+//   }
+//   .slider-work__descr {
+//     transform: translateY(0px);
+//     opacity: 1;
+//     visibility: visible;
+//   }
+//   .slider-work__title-link {
+//     transform: translateX(0px);
+//     opacity: 1;
+//   }
+// }
 .slider-work {
-  padding-bottom: 264px;
+  padding-bottom: 63px;
   display: flex;
   &__item {
     position: relative;
-    // max-width: 480px;
     overflow: hidden;
 
     &:hover {
@@ -36,7 +56,6 @@
         visibility: visible;
       }
       .slider-work__title-link {
-        // transition: opacity .4s linear 0.8s, transform .4s linear 0.5s;
         transform: translateX(0px);
         opacity: 1;
       }
@@ -55,9 +74,11 @@
     position: absolute;
     bottom: -60%;
     left: 0;
-    width: 100%;
+    right: 0;
+    max-width: 480px;
     padding: 100px 39px 50px;
     clip-path: polygon(0% 20%, 101% 0%, 101% 100%, 0% 100%);
+    // transition: all .5s linear .4s;
     transition: all .5s linear;
   }
   &__box--dark {
@@ -70,20 +91,20 @@
     opacity: 0;
     visibility: hidden;
     transition: opacity .4s linear 0.5s, transform .4s linear 0.5s;
+    // transition: opacity .4s linear 0.6s, transform .4s linear 0.6s;
   }
   &__title {
     position: relative;
     &::before {
       position: absolute;
       content: '';
-      top: 27px;
-      right: 9px;
-      background-image: url('../../images/icons/arrow-right.svg');
-      width: 20px;
-      height: 20px;
+      top: 29px;
+      right: 2px;
+      background-image: url('../images/svg/arrow-right.svg');
+      width: 8px;
+      height: 16px;
       background-repeat: no-repeat;
       opacity: 0;
-      // transition: opacity .2s linear 12s;
     }
   }
   &__title-link {
@@ -92,6 +113,7 @@
     color: $white;
     transition: all .2s linear;
     transition: opacity .8s linear .8s, transform .5s linear .8s, color .2s linear;
+    // transition: opacity .8s linear 1s, transform .5s linear 1s, color .2s linear;
     transform: translateX(28px);
     opacity: 0;
     &:hover {

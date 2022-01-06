@@ -3,6 +3,7 @@
   top: 80px;
   width: 100%;
   left: 0;
+  z-index: 2;
   &__container-content {
     @include flex-all-sb;
   }
