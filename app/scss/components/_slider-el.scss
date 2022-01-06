@@ -7,11 +7,18 @@
   &::after {
     content: '';
   }
+  &:hover {
+    .slider-img {
+      fill: $accent;
+    }
+  }
 }
 .slider-img {
   width: 13px;
   height: 13px;
   object-fit: cover;
+  transition: all .2s linear;
+  fill: $gray;
 }
 .swiper-button-prev {
   left: 382px;
@@ -19,7 +26,7 @@
   &::before {
     position: absolute;
     content: '';
-    background-image: url('../../images/icons/line.svg');
+    background-image: url('../images/icons/line.svg');
     background-repeat: no-repeat;
     width: 17px;
     height: 19px;
@@ -51,7 +58,7 @@
   &::before {
     position: absolute;
     content: '';
-    background-image: url('../../images/icons/line.svg');
+    background-image: url('../images/icons/line.svg');
     background-repeat: no-repeat;
     width: 17px;
     height: 19px;

@@ -1,0 +1,39 @@
+.mind {
+  background-color: $dark;
+  text-align: center;
+  padding: 121px 0 118px;
+  &__title {
+    position: relative;
+    @extend %play-700;
+    font-size: 52px;
+    line-height: 81px;
+    margin-bottom: 47px;
+
+    &::before {
+      position: absolute;
+      content: '';
+      width: 1px;
+      height: 120px;
+      background-color: $accent;
+      left: 50%;
+      transform: translateX(-50%);
+      bottom: 142px;
+    }
+  }
+  &__link {
+    position: relative;
+    padding-right: 19px;
+
+    &::before {
+      position: absolute;
+      content: '';
+      top: 50%;
+      transform: translateY(-50%);
+      right: 4px;
+      background-image: url('../images/svg/arrow-right.svg');
+      background-repeat: no-repeat;
+      width: 8px;
+      height: 13px;
+    }
+  }
+}

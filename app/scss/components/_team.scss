@@ -1,0 +1,53 @@
+.team {
+  padding: 200px 0 200px;
+  &__top {
+    margin-bottom: 100px;
+  }
+  &__subtitle {
+    margin-bottom: 28px;
+  }
+  &__title {
+    max-width: 750px;
+    color: $pearl;
+  }
+  &__items {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 340px);
+    grid-gap: 60px;
+  }
+  &__item {
+
+  }
+}
+
+.human {
+  text-align: center;
+  &__img {
+    display: block;
+    width: 340px;
+    height: 510px;
+    object-fit: cover;
+    margin-bottom: 50px;
+  }
+  &__name {
+    position: relative;
+    font-size: 33px;
+    line-height: 53px;
+    @extend %play-700;
+    margin-bottom: 10px;
+
+    &::before {
+      position: absolute;
+      content: '';
+      width: 1px;
+      height: 60px;
+      background-color: $accent;
+      left: 49%;
+      transform: translateX(-50%);
+      bottom: 75px;
+    }
+  }
+  &__prof {
+
+  }
+}
