@@ -1,0 +1,47 @@
+.reviews {
+  padding-bottom: 201px;
+}
+.slider-reviews {
+  padding-bottom: 64px;
+}
+.review {
+  padding: 120px 0 118px;
+  background-color: $dark;
+  padding-left: 264px;
+
+  &__box{ 
+    position: relative;
+    padding-left: 118px;
+    &::before {
+      position: absolute;
+      content: '';
+      top: 16px;
+      left: 0;
+      width: 78px;
+      height: 70px;
+      background-image: url('../images/icons/quote.svg');
+    }
+  }
+  &__text {
+    margin-bottom: 37px;
+    font-size: 33px;
+    line-height: 53px;
+    color: $alto;
+    @extend %play-italic;
+  }
+  &__author {
+    position: relative;
+    padding-left: 91px;
+
+    &::before {
+      position: absolute;
+      content: '';
+      top: 50%;
+      transform: translateY(-50%);
+      left: 0;
+      background-color: $accent;
+      width: 60px;
+      height: 1px;
+    }
+  }
+}

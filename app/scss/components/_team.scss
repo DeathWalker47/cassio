@@ -47,6 +47,13 @@
       bottom: 75px;
     }
   }
+  &__name-link {
+    transition: color .2s linear;
+
+    &:hover {
+      color: $title;
+    }
+  }
   &__prof {
 
   }
