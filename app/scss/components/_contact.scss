@@ -1,0 +1,143 @@
+.contact {
+  padding-bottom: 200px;
+  &__form {
+  }
+  &__title {
+  }
+}
+.contact-map {
+  width: 100%;
+  height: 800px;
+  background-color: $alto;
+}
+.contact-form {
+  padding: 80px 196px 80px;
+  margin-top: -160px;
+  margin-bottom: 101px;
+  &--dark {
+    background-color: $dark;
+  }
+  &__title {
+    text-align: center;
+    margin-bottom: 61px;
+  }
+  &__title--dark {
+    color: $title-dark;
+  }
+  &__input-box {
+    position: relative;
+    max-width: 360px;
+    width: 100%;
+    margin-bottom: 30px;
+    display: inline-block;
+    &:not(:last-child) {
+      margin-right: 24px;
+    }
+  }
+  &__input {
+    background-color: transparent;
+    width: 100%;
+    color: $gray;
+    padding-bottom: 6px;
+    padding-right: 15px;
+    border: none;
+    border-bottom: 1px solid rgba($color: #ccc, $alpha: 0.3);
+    transition: all 0.2s linear;
+    outline: none;
+    &:focus {
+      border-color: $accent;
+      & ~ .contact-form__label {
+        top: -19px;
+        font-size: 13px;
+        line-height: 13px;
+        color: $title;
+      }
+    }
+  }
+  &__label {
+    font-size: 16px;
+    line-height: 28px;
+    color: $gray;
+    position: absolute;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+    transition:  all .2s linear;
+  }
+  &__textarea {
+    width: 100%;
+    height: 153px;
+    color: $gray;
+    outline: none;
+    padding-right: 15px;
+    margin-bottom: 32px;
+    resize: none;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid rgba($color: #ccc, $alpha: 0.3);
+    transition: all 0.2s linear;
+    &:focus {
+      border-color: $accent;
+    }
+    &::placeholder {
+      font-size: 16px;
+      line-height: 28px;
+      color: $gray;
+    }
+  }
+  &__btn {
+    @extend %roboto-700;
+    color: $white;
+    display: block;
+    padding: 20px 45px;
+    border: none;
+    margin: 0 auto;
+    cursor: pointer;
+    transition:  all .2s linear;
+    &:hover {
+      background-color: $accent;
+    }
+  }
+  &__btn--light {
+    background-color: $title;
+  }
+  &__btn--dark {
+    background-color: $title-dark;
+  }
+}
+.contact-info {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  &__item {
+    max-width: 262px;
+    width: 100%;
+    text-align: center;
+    &:not(:last-child) {
+      margin-right: 30px;
+    }
+  }
+  &__img {
+    width: 30px;
+    height: 30px;
+    margin-bottom: 26px;
+    object-fit: cover;
+  }
+  &__img--accent {
+    fill: $accent;
+  }
+  &__img--dark {
+    fill: $title-dark;
+  }
+  &__tel,
+  &__mess {
+    display: block;
+    transition: all .2s linear;
+
+    &:hover {
+      color: $accent;
+      text-decoration-color: $accent;
+      text-decoration: underline;
+    }
+  }
+}
