@@ -14,6 +14,7 @@ body{
 //Класс, для того, чтоб страница не скроллилась после открытия меню
 body.hidden{
   overflow: hidden;
+  margin-right: 17px;// чтоб экран не дергался
 }
 .home {
   background-color: $main-bg;

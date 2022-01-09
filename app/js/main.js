@@ -2,6 +2,14 @@
 
 // });
 
+const btnMenu = document.querySelector(".burger-btn");
+const headerMenu = document.querySelector(".heade-menu");
+btnMenu.addEventListener("click", () => {
+  btnMenu.classList.toggle("active");
+  headerMenu.classList.toggle("active");
+  document.querySelector('body').classList.toggle('hidden');
+});
+
 new Swiper(".slider-work", {
   loop: true,
   spaceBetween: 0,

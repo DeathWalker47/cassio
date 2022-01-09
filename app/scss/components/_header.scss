@@ -1,20 +1,16 @@
 .header {
   position: absolute;
-  top: 80px;
+  top: 0px;
+  padding-top: 73px;
   width: 100%;
   left: 0;
-  z-index: 2;
+  z-index: 5;
   &__container-content {
     @include flex-all-sb;
+    z-index: 4;
   }
   &__burger {
 
-  }
-  &__burger-btn {
-    padding: 0;
-    background-color: transparent;
-    border: none;
-    cursor: pointer;
   }
 }
 .social {
@@ -33,5 +29,30 @@
     &:hover {
       fill: $accent;
     }
+  }
+}
+
+.burger-btn {
+  padding: 0;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  svg {
+    height: 30px;
+    transition: all .3s linear;
+  }
+  &__line-top {
+    transition: all .3s linear;
+  }
+  &__line-bottom {
+    transition: all .3s linear;
+  }
+}
+.burger-btn.active {
+  .burger-btn__line-top {
+    transform: rotate(35deg) translate(0px, -6px);
+  }
+  .burger-btn__line-bottom {
+    transform: rotate(-35deg) translate(-5px, 3px);
   }
 }

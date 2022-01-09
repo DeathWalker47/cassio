@@ -1,0 +1,93 @@
+.heade-menu {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  min-height: 100vh;
+  overflow: auto;
+  // height: 0;
+  padding: 300px 110px 80px;
+  background-image: url('../../images/menu-bg.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: auto;
+  transition: all .5s linear;
+  transform: translateY(-100%);
+  opacity: 0;
+  visibility: hidden;
+  z-index: -1;
+  &--dark {
+    background-color: $main-bg;
+  }
+  &__info {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+
+    transition:  transform .5s linear .8s, opacity 1s linear .9s;
+    transform: translateY(20px);
+    opacity: 0;
+    visibility: hidden;
+  }
+  &__link {
+    display: block;
+    transition: all .2s linear;
+    
+    &:hover {
+      color: $accent;
+      text-decoration: underline;
+      text-decoration-color: $accent;
+    }
+  }
+}
+.menu {
+  margin-bottom: 115px;
+  &__list {
+    transition:  transform .4s linear .4s, opacity .4s ease .5s;
+    transform: translateY(40px);
+    opacity: 0.2;
+    visibility: hidden;
+  }
+  &__item {
+    &:not(:last-child) {
+      margin-bottom: 20px;
+    }
+  }
+  &__link {
+    @extend %play-700;
+    font-size: 40px;
+    line-height: 56px;
+    color: $title;
+    transition: all .2s linear;
+    &:hover {
+      color: $accent;
+    }
+  }
+  &__link--active {
+    color: $accent;
+  }
+  &__circle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 300px;
+    height: 300px;
+  }
+}
+
+.heade-menu.active {
+  transform: translateY(0%);
+  opacity: 1;
+  visibility: visible;
+  .menu__list {
+    transform: translateY(0px);
+    opacity: 1;
+    visibility: visible;
+  }
+  .heade-menu__info {
+    transform: translateY(0px);
+    opacity: 1;
+    visibility: visible;
+  }
+}
