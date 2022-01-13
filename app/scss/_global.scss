@@ -1,9 +1,8 @@
-
 body,
-html{
+html {
   height: 100%;
 }
-body{
+body {
   position: relative;
   color: $white;
   font-size: 16px;
@@ -12,21 +11,24 @@ body{
 }
 
 //Класс, для того, чтоб страница не скроллилась после открытия меню
-body.hidden{
+body.hidden {
   overflow: hidden;
-  margin-right: 17px;// чтоб экран не дергался
+  // margin-right: 17px;// чтоб экран не дергался
 }
 .home {
   background-color: $main-bg;
 }
-.wrapper{
+.portfolio-one {
+  background-color: $bg-light;
+}
+.wrapper {
   display: flex;
   flex-direction: column;
   overflow: hidden;
   min-height: 100%;
 }
 
-.main{
+.main {
   flex-grow: 1;
 }
 
@@ -36,24 +38,24 @@ body.hidden{
   margin: 0 auto;
 }
 
-.container{
+.container {
   max-width: 1170px;
   padding: 0 15px;
   margin: 0 auto;
 }
 
 .visually-hidden {
-	position: absolute !important;
-	clip: rect(1px 1px 1px 1px);
-	clip: rect(1px, 1px, 1px, 1px);
-	padding:0 !important;
-	border:0 !important;
-	height: 1px !important; 
-	width: 1px !important; 
-	overflow: hidden;
+  position: absolute !important;
+  clip: rect(1px 1px 1px 1px);
+  clip: rect(1px, 1px, 1px, 1px);
+  padding: 0 !important;
+  border: 0 !important;
+  height: 1px !important;
+  width: 1px !important;
+  overflow: hidden;
 }
 
-.title{
+.title {
   @extend %play-700;
   font-size: 42px;
   line-height: 66px;
@@ -71,9 +73,35 @@ body.hidden{
 .text-up--fill {
   @extend %roboto-700;
   color: $title;
-  transition:  color .2s linear;
+  transition: color 0.2s linear;
 
   &:hover {
     color: $accent;
   }
+}
+
+.main-title {
+  @extend %play-700;
+  font-size: 65px;
+  line-height: 100px;
+}
+
+.descr {
+  @extend %roboto-700;
+  font-size: 16px;
+  line-height: 28px;
+  color: $tundora;
+  padding-left: 9px;
+  transform: rotate(-180deg);
+  writing-mode: vertical-rl;
+  &--right {
+    padding-left: 0;
+    padding-right: 9px;
+  }
+}
+
+.img-display {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
 }

@@ -19,6 +19,9 @@
   &--dark {
     background-color: $main-bg;
   }
+  &--light {
+    background-color: $bg-cream-light;
+  }
   &__info {
     display: flex;
     justify-content: space-between;
@@ -43,7 +46,7 @@
 .menu {
   margin-bottom: 115px;
   &__list {
-    transition:  transform .4s linear .4s, opacity .4s ease .5s;
+    transition:  transform .5s linear .4s, opacity .5s ease .5s;
     transform: translateY(40px);
     opacity: 0.2;
     visibility: hidden;
@@ -89,5 +92,23 @@
     transform: translateY(0px);
     opacity: 1;
     visibility: visible;
+  }
+}
+
+.header--light {
+  .social__img {
+    fill: $gray;
+    &:hover {
+      fill: $dark ;
+    }
+  }
+  .menu__link {
+    color: $title-dark;
+    &:hover {
+      color: #628AB2;
+    }
+  }
+  .heade-menu__info {
+    color: $tundora;
   }
 }

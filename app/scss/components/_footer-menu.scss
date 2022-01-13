@@ -1,0 +1,49 @@
+.footer-menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  &__item {
+    width: 40%;
+  }
+  &__prev {
+  }
+  &__prev-link {
+    padding-left: 120px;
+  }
+  &__link {
+    display: flex;
+    align-items: center;
+    height: 272px;
+    transition: all .3s linear;
+
+    &:hover {
+      background-color: $pearl;
+    }
+  }
+  &__img {
+    width: 8px;
+    height: 13px;
+    object-fit: cover;
+    fill: $gray;
+  }
+  &__center {
+    width: 20%;
+  }
+  &__center-link {
+    justify-content: center;
+  }
+  &__circle-img {
+    width: 34px;
+    height: 34px;
+    object-fit: contain;
+  }
+  &__next {
+  }
+  &__next-link {
+    padding-right: 120px;
+    justify-content: flex-end;
+  }
+}
+.footer-menu--light {
+  background-color: $white;
+}

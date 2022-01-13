@@ -9,6 +9,7 @@
 @import "components/header";
 @import "components/header-menu";
 @import "components/footer";
+@import "components/footer-menu";
 
 //Компоненты главной страницы
 @import "components/home-top";
@@ -22,6 +23,9 @@
 @import "components/last-blog";
 @import "components/contact";
 
+
+//Компоненты Portfolio-1
+@import "components/portfolio-one";
 
 //Маленькие компоненты
 @import "components/slider-el";

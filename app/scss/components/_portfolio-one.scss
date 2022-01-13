@@ -1,0 +1,135 @@
+.details-one {
+  &__content {
+    position: relative;
+    max-width: 970px;
+    padding-top: 344px;
+    padding-left: 120px;
+    padding-bottom: 70px;
+    margin-bottom: 160px;
+    &::before {
+      position: absolute;
+      content: "";
+      bottom: 0;
+      left: 120px;
+      height: 1px;
+      width: 120px;
+      background-color: $accent;
+    }
+  }
+  &__subtitle {
+    margin-bottom: 14px;
+    color: $gray;
+  }
+  &__title {
+    margin-bottom: 51px;
+    color: $title-dark;
+  }
+  &__descr {
+    font-size: 33px;
+    line-height: 53px;
+    color: $gray;
+  }
+}
+
+.dining {
+  margin-bottom: 240px;
+  &__img {
+    width: 1680px;
+    height: 800px;
+    object-fit: cover;
+  }
+}
+
+.guest {
+  &__container {
+    @include flex-all-sb;
+
+    margin-bottom: 398px;
+  }
+  &__img {
+    width: 450px;
+    height: 675px;
+    object-fit: cover;
+  }
+  &__images {
+    transform: translateY(160px);
+  }
+}
+
+.kitchen {
+  justify-content: start;
+  margin-bottom: 240px;
+  &__img {
+    width: 1722px;
+    height: 800px;
+    object-fit: cover;
+  }
+}
+.living-space {
+  margin-bottom: 400px;
+  &__container {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__images {
+    &:not(:last-child) {
+      transform: translateY(160px);
+      margin-left: -41px;
+    }
+  }
+  &__img {
+    width: 450px;
+    height: 675px;
+    object-fit: cover;
+  }
+}
+.video {
+  position: relative;
+  background-image: url("../../images/videg-img.jpg");
+  background-image: url("../../images/videg-img.webp");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  @include flex-all-center;
+  margin-bottom: 160px;
+  height: 800px;
+  z-index: 1;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba($color: $main-bg, $alpha: 0.6);
+    z-index: -1;
+  }
+  &__play {
+  }
+  &__img {
+    stroke: $gray;
+    transition: all 0.2s linear;
+    &:hover {
+      stroke: $accent;
+    }
+  }
+}
+.results {
+  margin-bottom: 160px;
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  &__title {
+    @extend %play-700;
+    font-size: 20px;
+    line-height: 34px;
+    color: $title-dark;
+  }
+  &__text {
+    max-width: 558px;
+    color: $tundora;
+  }
+}
