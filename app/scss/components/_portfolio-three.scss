@@ -1,0 +1,146 @@
+.royal {
+  background-color: $bg-light;
+}
+
+.royal-top {
+  position: relative;
+  min-height: 100vh;
+  background-image: url("../images/bg-3.jpg");
+  background-image: url("../images/bg-3.webp");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: 1;
+
+  &::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba($color: $main-bg, $alpha: 0.6);
+    z-index: -1;
+  }
+  &__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  &__content {
+    padding-top: 471px;
+    padding-bottom: 276px;
+    text-align: center;
+  }
+  &__subtitle {
+    margin-bottom: 14px;
+  }
+  &__title {
+    color: $title;
+  }
+}
+
+.link-down {
+  padding-bottom: 40px;
+}
+
+.information {
+  padding-top: 160px;
+  &__content {
+    margin-bottom: 157px;
+  }
+  &__title {
+    @extend %play-400;
+    max-width: 945px;
+    font-size: 33px;
+    line-height: 53px;
+    color: $title-dark;
+    margin-bottom: 60px;
+  }
+  &__items {
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+
+    &::before {
+      position: absolute;
+      content: "";
+      top: 10px;
+      left: 0;
+      width: 120px;
+      height: 1px;
+      background-color: $accent;
+    }
+  }
+  &__item {
+    max-width: 360px;
+    &:not(:last-child) {
+      margin-right: 128px;
+    }
+  }
+  &__subtitle {
+    margin-bottom: 14px;
+  }
+  &__text {
+    color: $tundora;
+  }
+  &__image-box {
+    &--left {
+      justify-content: start;
+    }
+  }
+  &__image {
+    width: 1520px;
+    height: 800px;
+  }
+  &__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  &__descr {
+    color: $tundora;
+  }
+}
+
+.information-descr {
+  &__decor {
+    position: relative;
+    display: block;
+    &::before {
+      position: absolute;
+      content: "";
+      top: 10px;
+      // left: 0;
+      width: 120px;
+      height: 1px;
+      background-color: $accent;
+    }
+  }
+}
+
+.royal-sliders {
+  padding-top: 160px;
+  .platinum-slider__image {
+    height: 900px;
+  }
+  .swiper-pagination {
+    bottom: auto;
+    top: 0;
+  }
+  .swiper-button-prev,
+  .swiper-button-next {
+    top: 22px;
+    bottom: auto;
+    .slider-img {
+      fill: $gray;
+    }
+  }
+  .swiper-button-prev {
+    left: 267px;
+  }
+  .swiper-button-next {
+    left: 367px;
+  }
+}

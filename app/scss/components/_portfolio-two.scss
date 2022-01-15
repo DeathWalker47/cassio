@@ -37,22 +37,6 @@
 .platinum-sliders {
   background-color: $bg-cream;
   height: 854px;
-}
-.platinum-slider {
-  transform: translateY(-160px);
-  padding-bottom: 54px;
-  &__item {
-    max-width: 1680px;
-  }
-  &__image {
-    width: 1680px;
-    height: 800px;
-  }
-  &__img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
   .swiper-button-prev {
     left: 0;
     .slider-img {
@@ -71,6 +55,31 @@
   }
   .swiper-pagination {
     right: 0;
+  }
+}
+.platinum-slider {
+  &--style {
+    transform: translateY(-160px);
+    padding-bottom: 54px;
+  }
+  &__item {
+    max-width: 1680px;
+  }
+  &__text {
+    @extend %roboto-700;
+    text-align: center;
+    color: $tundora;
+    margin-bottom: 30px;
+    text-transform: capitalize;
+  }
+  &__image {
+    width: 1680px;
+    height: 800px;
+  }
+  &__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
   }
 }
 
