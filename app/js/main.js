@@ -43,6 +43,39 @@ new Swiper(".slider-work", {
   },
 });
 
+new Swiper(".platinum-slider", {
+  loop: true,
+  spaceBetween: 30,
+  speed: 1000,
+  slidesPerView: 1,
+  pagination: {
+    el: ".swiper-pagination",
+    type: "fraction",
+    formatFractionCurrent: function (number) {
+      if (number < 100) {
+        number = "0" + number;
+      }
+      if (number < 10) {
+        number = "0" + number;
+      }
+      return number;
+    },
+    formatFractionTotal: function (number) {
+      if (number < 100) {
+        number = "0" + number;
+      }
+      if (number < 10) {
+        number = "0" + number;
+      }
+      return number;
+    },
+  },
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+});
+
 new Swiper(".slider-reviews", {
   loop: true,
   spaceBetween: 0,

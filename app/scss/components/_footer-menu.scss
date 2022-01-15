@@ -5,8 +5,6 @@
   &__item {
     width: 40%;
   }
-  &__prev {
-  }
   &__prev-link {
     padding-left: 120px;
   }
@@ -16,9 +14,9 @@
     height: 272px;
     transition: all .3s linear;
 
-    &:hover {
-      background-color: $pearl;
-    }
+    // &:hover {
+    //   background-color: $pearl;
+    // }
   }
   &__img {
     width: 8px;
@@ -37,8 +35,6 @@
     height: 34px;
     object-fit: contain;
   }
-  &__next {
-  }
   &__next-link {
     padding-right: 120px;
     justify-content: flex-end;
@@ -46,4 +42,21 @@
 }
 .footer-menu--light {
   background-color: $white;
+  .footer-menu {
+    &__link {
+      &:hover {
+        background-color: $pearl;
+      }
+    }
+  }
+}
+.footer-menu--dark {
+  background-color: $dark;
+  .footer-menu {
+    &__link {
+      &:hover {
+        background-color: $tundora;
+      }
+    }
+  }
 }

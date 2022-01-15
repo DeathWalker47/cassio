@@ -91,7 +91,6 @@
   background-repeat: no-repeat;
   background-position: center;
   @include flex-all-center;
-  margin-bottom: 160px;
   height: 800px;
   z-index: 1;
 
@@ -105,31 +104,11 @@
     background-color: rgba($color: $main-bg, $alpha: 0.6);
     z-index: -1;
   }
-  &__play {
-  }
   &__img {
     stroke: $gray;
     transition: all 0.2s linear;
     &:hover {
       stroke: $accent;
     }
-  }
-}
-.results {
-  margin-bottom: 160px;
-  &__container {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-  }
-  &__title {
-    @extend %play-700;
-    font-size: 20px;
-    line-height: 34px;
-    color: $title-dark;
-  }
-  &__text {
-    max-width: 558px;
-    color: $tundora;
   }
 }

@@ -1,0 +1,31 @@
+.bottom-info {
+  padding: 160px 0 160px;
+  &--dark {
+    background-color: $main-bg;
+  }
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  &__title {
+    @extend %play-700;
+    font-size: 20px;
+    line-height: 34px;
+  }
+  &__title--dark {
+    color: $title-dark;
+  }
+  &__title--light {
+    color: $pearl;
+  }
+  &__text {
+    max-width: 558px;
+  }
+  &__text--dark {
+    color: $tundora;
+  }
+  &__text--light {
+    color: $white;
+  }
+}
