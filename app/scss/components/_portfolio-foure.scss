@@ -43,6 +43,9 @@
 .elegant-info {
   background-color: $white;
   padding: 80px 0 80px;
+  &--dark {
+    background-color: $mirage-ligth;
+  }
   &__container {
     @include flex;
   }

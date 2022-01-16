@@ -60,3 +60,19 @@
     }
   }
 }
+.footer-menu--blue {
+  background-color: $mirage-ligth;
+  .footer-menu__img,
+  .footer-menu__circle-img {
+    fill: $white;
+  }
+  .footer-menu {
+    &__link {
+      &:hover {
+        background-color: $title-dark;
+      }
+    }
+  }
+}
+
+
