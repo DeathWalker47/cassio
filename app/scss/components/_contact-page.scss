@@ -1,0 +1,28 @@
+.contact-page {
+  background-color: $bg-light;
+  &__title {
+    text-align: center;
+    padding: 160px 0 160px;
+    color: $title-dark;
+  }
+  &__content {
+    background-color: $white;
+    padding: 160px 0 160px;
+  }
+  .contact-form__label {
+    color: $tundora;
+  }
+  .contact-form__input ,
+  .contact-form__textarea{
+    color: $tundora;
+    &::placeholder {
+      color: $tundora;
+    }
+  }
+  .contact-info__img--accent {
+    fill: $title-dark;
+  }
+  .contact-info {
+    color: $tundora;
+  }
+}

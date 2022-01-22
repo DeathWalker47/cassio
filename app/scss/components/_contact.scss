@@ -17,9 +17,13 @@
   &--dark {
     background-color: $dark;
   }
+  &--crem {
+    background-color: $bg-cream-light;
+  }
   &__title {
     text-align: center;
     margin-bottom: 61px;
+    color: $title;
   }
   &__title--dark {
     color: $title-dark;
@@ -50,7 +54,7 @@
         top: -19px;
         font-size: 13px;
         line-height: 13px;
-        color: $title;
+        color: $accent;
       }
     }
   }
