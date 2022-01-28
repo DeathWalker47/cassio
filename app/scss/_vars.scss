@@ -20,8 +20,6 @@ $bg-cream-light: #f7f5f0;
 $mirage: #162330;
 $mirage-ligth: #283847;
 
-
-
 %play-700 {
   font-family: "Playfair Display", sans-serif;
   font-weight: 700;
@@ -58,9 +56,6 @@ $mirage-ligth: #283847;
   font-style: normal;
 }
 
-
-
-
 // %burger-width{
 //   width: ;
 // }
@@ -70,3 +65,10 @@ $mirage-ligth: #283847;
 // %burger-line-height{
 //   height: ;
 // }
+
+@function max($numbers...) {
+ @return m#{a}x(#{$numbers});
+}
+@function mix($numbers...) {
+ @return m#{i}n(#{$numbers});
+}

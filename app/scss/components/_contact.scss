@@ -1,9 +1,5 @@
 .contact {
   padding-bottom: 200px;
-  &__form {
-  }
-  &__title {
-  }
 }
 .contact-map {
   width: 100%;
@@ -12,8 +8,8 @@
 }
 .contact-form {
   padding: 80px 196px 80px;
-  margin-top: -160px;
-  margin-bottom: 101px;
+  margin-bottom: -58px;
+  transform: translateY(-160px);
   &--dark {
     background-color: $dark;
   }
@@ -66,7 +62,7 @@
     top: 0;
     left: 0;
     pointer-events: none;
-    transition:  all .2s linear;
+    transition: all 0.2s linear;
   }
   &__textarea {
     width: 100%;
@@ -97,7 +93,7 @@
     border: none;
     margin: 0 auto;
     cursor: pointer;
-    transition:  all .2s linear;
+    transition: all 0.2s linear;
     &:hover {
       background-color: $accent;
     }
@@ -136,12 +132,29 @@
   &__tel,
   &__mess {
     display: block;
-    transition: all .2s linear;
+    transition: all 0.2s linear;
 
     &:hover {
       color: $accent;
       text-decoration-color: $accent;
       text-decoration: underline;
     }
+  }
+}
+.balloon {
+  &__title{
+    @extend %play-700;
+    color: $main-bg;
+    font-size: 20px;
+    line-height: 20px;
+    padding-bottom: 6px;
+  }
+  &__link{
+    @extend %play-400;
+    display: block;
+    color: $accent;
+    font-size: 18px;
+    line-height: 18px;
+    text-align: center;
   }
 }

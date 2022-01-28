@@ -48,7 +48,9 @@
 //Компоненты Contact-page
 @import "components/contact-page";
 
-
+.menu-sumbol {
+  transition: all 1s linear;
+}
 //Маленькие компоненты
 @import "components/slider-el";
 @import "components/bottom-info";
