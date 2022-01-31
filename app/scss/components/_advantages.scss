@@ -19,7 +19,8 @@
   }
   &__item {
     position: relative;
-    width: 262px;
+    max-width: 262px;
+    width: 100%;
     padding: 61px 10px;
     text-align: center;
     &::before {
