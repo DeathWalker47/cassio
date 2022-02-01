@@ -19,8 +19,8 @@
     overflow: hidden;
   }
   &__img-link {
-    width: 1430px;
-    height: 740px;
+    max-width: 1430px;
+    max-height: 740px;
     display: block;
     transition: all 0.3s linear;
     &:hover {

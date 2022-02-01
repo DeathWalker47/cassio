@@ -73,7 +73,15 @@ new Swiper(".slider-work", {
   loop: true,
   spaceBetween: 0,
   speed: 1000,
-  slidesPerView: 4,
+  slidesPerView: 1,
+  breakpoints: {
+    1200: {
+      slidesPerView: 3,
+    },
+    1720: {
+      slidesPerView: 4,
+    }
+  },
   pagination: {
     el: ".swiper-pagination",
     type: "fraction",
