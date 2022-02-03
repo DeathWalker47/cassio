@@ -42,6 +42,10 @@
   .about-info__inner {
     align-items: flex-start;
   }
+  .living-space__images:not(:last-child),
+  .guest__images:not(:last-child) {
+    margin-left: 0;
+  }
 }
 
 @media (max-width: 1200px) {
@@ -161,6 +165,59 @@
   .apartments--reverse .apartments__title {
     margin-left: 0;
   }
+  .details-one__content {
+    padding-top: 200px;
+    padding-left: 60px;
+    padding-bottom: 20px;
+    margin-bottom: 80px;
+  }
+  .platinum-top {
+    padding-top: 200px;
+    padding-bottom: 200px;
+  }
+  .platinum-slider--style {
+    transform: translateY(-70px);
+  }
+  .preview-images__container {
+    justify-content: center;
+  }
+  .preview-images__item {
+    margin-bottom: 60px;
+  }
+  .preview-images__item:nth-child(2n) {
+    transform: translateY(0px);
+  }
+  .preview-images {
+    padding: 60px 0;
+  }
+  .page-top__content {
+    padding-top: 340px;
+  }
+  .information__image {
+    height: 550px;
+  }
+  .royal-sliders .swiper-button-prev {
+    left: 0;
+  }
+  .royal-sliders .swiper-button-next {
+    left: 105px;
+  }
+  .royal-sliders .platinum-slider__image {
+    height: 550px;
+  }
+  .information {
+    padding-top: 80px;
+  }
+  .royal-sliders {
+    padding-top: 60px;
+  }
+  .information__content {
+    margin-bottom: 60px;
+  }
+  .information__items::before,
+  .information-descr__decor::before {
+    display: none;
+  }
 }
 
 @media (max-width: 992px) {
@@ -173,6 +230,35 @@
   }
   .advantages__items {
     grid-template-columns: repeat(2, 1fr);
+  }
+  .dining__img,
+  .kitchen__img,
+  .video {
+    height: 530px;
+  }
+  .dining,
+  .guest__container,
+  .living-space,
+  .kitchen {
+    margin-bottom: 130px;
+  }
+  .guest__images {
+    transform: translateY(0px);
+  }
+  .living-space__images:not(:last-child) {
+    transform: translateY(0px);
+  }
+  .guest__container,
+  .living-space__container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .guest__images:not(:last-child),
+  .living-space__images:not(:last-child) {
+    margin-bottom: 25px;
+  }
+  .bottom-info {
+    padding: 100px 0 100px;
   }
 }
 
@@ -290,7 +376,8 @@
   .review__box::before {
     display: none;
   }
-  .review__text {
+  .review__text,
+  .information__title {
     margin-bottom: 25px;
     font-size: 26px;
     line-height: 44px;
@@ -320,12 +407,53 @@
   .contact-page__content {
     padding: 60px 0 60px;
   }
+  .details-one__descr {
+    font-size: 26px;
+    line-height: 42px;
+  }
+  .platinum-top__text {
+    font-size: 26px;
+    line-height: 42px;
+  }
+  .information__image {
+    height: 400px;
+  }
+  .royal-sliders {
+    padding-top: 0;
+  }
+  .royal-sliders .platinum-slider__image {
+    height: 415px;
+  }
+  .information__items {
+    flex-direction: column;
+    align-items: center;
+  }
+  .information__item:not(:last-child) {
+    margin-right: 0;
+  }
 }
+
 @media (max-width: 768px) {
   .apartments .text-up {
     display: none;
   }
+  .bottom-info__container {
+    flex-direction: column;
+  }
+  .bottom-info__title {
+    margin-bottom: 10px;
+  }
+  .footer-menu__link {
+    height: 140px;
+  }
+  .details-one__content {
+    padding-top: 140px;
+    padding-left: 15px;
+    padding-bottom: 10px;
+    margin-bottom: 60px;
+  }
 }
+
 @media (max-width: 576px) {
   .main-title {
     font-size: 44px;
@@ -494,7 +622,8 @@
   .review__box {
     padding: 0 15px;
   }
-  .review__text {
+  .review__text,
+  .information__title {
     margin-bottom: 15px;
     font-size: 22px;
     line-height: 34px;
@@ -585,6 +714,118 @@
     padding: 80px 15px 30px;
     clip-path: polygon(0% 30%, 101% 15%, 101% 100%, -1% 100%);
   }
+  .details-one {
+    padding: 0 15px;
+  }
+  .details-one__content {
+    padding-left: 0;
+  }
+  .details-one__title,
+  .platinum-top__title {
+    margin-bottom: 20px;
+  }
+  .details-one__descr {
+    font-size: 18px;
+    line-height: 32px;
+  }
+  .dining__img,
+  .kitchen__img,
+  .video {
+    height: 280px;
+  }
+  .living-space__img,
+  .guest__img,
+  .preview-images__image {
+    width: 300px;
+    height: 430px;
+  }
+  .descr {
+    font-size: 12px;
+    line-height: 15px;
+    padding-left: 5px;
+  }
+  .dining,
+  .guest__container,
+  .living-space,
+  .kitchen {
+    margin-bottom: 60px;
+  }
+  .bottom-info {
+    padding: 40px 0;
+  }
+  .footer-menu__next-link,
+  .footer-menu__prev-link {
+    padding: 0;
+    display: flex;
+    justify-content: center;
+  }
+  .footer-menu__item,
+  .footer-menu__center {
+    width: 33%;
+  }
+  .footer-menu__link {
+    height: 100px;
+  }
+  .details-one__content {
+    padding-top: 110px;
+  }
+  .platinum-top {
+    padding-top: 110px;
+    padding-bottom: 60px;
+  }
+  .platinum-top__text {
+    font-size: 18px;
+    line-height: 32px;
+    padding-bottom: 20px;
+  }
+  .platinum-slider--style {
+    transform: translateY(-25px);
+    padding-bottom: 30px;
+  }
+  .platinum-sliders .swiper-button-next {
+    left: 55px;
+  }
+  .preview-images {
+    padding: 60px 0 0;
+  }
+  .platinum-image__img {
+    height: 240px;
+  }
+  .page-top__container {
+    min-height: 100vh;
+  }
+  .page-top__content {
+    padding-top: 200px;
+    padding-bottom: 200px;
+  }
+  .link-down {
+    padding-bottom: 15px;
+  }
+  .information {
+    padding-top: 40px;
+  }
+  .information__image {
+    height: 240px;
+  }
+  .img-display {
+    padding: 0 15px;
+  }
+  .platinum-slider__text {
+    margin-bottom: 15px;
+  }
+  .royal-sliders .platinum-slider__image {
+    height: 250px;
+  }
+  .royal-sliders .swiper-button-next {
+    left: 55px;
+  }
+  .platinum-slider__text {
+    margin-bottom: 10px;
+    font-size: 12px;
+  }
+  .royal-sliders .swiper-pagination {
+    right: 0;
+  }
 }
 
 @media (max-width: 360px) {
@@ -615,5 +856,23 @@
   .apartments__title {
     font-size: 20px;
     line-height: 28px;
+  }
+  .dining__img,
+  .kitchen__img,
+  .information__image {
+    height: 180px;
+  }
+  .living-space__img,
+  .guest__img,
+  .preview-images__image {
+    width: 280px;
+    height: 380px;
+  }
+  .details-one__descr {
+    font-size: 16px;
+    line-height: 28px;
+  }
+  .page-top__content {
+    padding-bottom: 120px;
   }
 }

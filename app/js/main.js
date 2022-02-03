@@ -225,13 +225,12 @@ if (headerMenu.closest(".heade-menu--light")) {
 }
 
 // Подлкючение Яндекс карты
-if (document.querySelector("#map")) {
+if (document.querySelector("#map") || document.querySelector("#map-page")) {
   function init() {
     let map = new ymaps.Map("map", {
       center: [38.89018275315561, -77.01825210825062],
       zoom: 16,
     });
-
     map.controls.remove("geolocationControl"); // удаляем геолокацию
     map.controls.remove("searchControl"); // удаляем поиск
     map.controls.remove("trafficControl"); // удаляем контроль трафика
