@@ -6,10 +6,10 @@
   .page-top__title {
     color: $title-dark;
   }
-  .page-top__content {
-    padding-top: 418px;
-    padding-bottom: 229px;
-  }
+  // .page-top__content {
+  //   padding-top: 418px;
+  //   padding-bottom: 229px;
+  // }
 }
 
 .elegant-box {
@@ -70,8 +70,8 @@
   background-color: $pearl;
   &__img {
     display: block;
-    width: 1680px;
-    height: 900px;
+    // width: 1680px;
+    // height: 900px;
     margin-bottom: 28px;
     * {
       width: 100%;
@@ -93,8 +93,8 @@
 
   }
   &__img {
-    width: 732px;
-    height: 900px;
+    max-width: 732px;
+    max-height: 900px;
     * {
       width: 100%;
       height: 100%;
@@ -109,8 +109,8 @@
     @include flex-all-sb;
   }
   &__img {
-    width: 400px;
-    height: 600px;
+    max-width: 400px;
+    max-height: 600px;
     * {
       width: 100%;
       height: 100%;

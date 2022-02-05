@@ -1,7 +1,7 @@
 .european {
   background-color: $mirage;
   &__img {
-    height: 800px;
+    max-height: 800px;
   }
   &__video {
     background-image: url('../images/bg-10.jpg');
@@ -26,11 +26,14 @@
       background-color: $mirage;
     }
   }
+  .elegant-info__descr {
+    color: $white;
+  }
 }
 
 .european-top {
-  padding-top: 344px;
-  padding-bottom: 160px;
+  padding-top: 240px;
+  padding-bottom: 140px;
   &__content {
     position: relative;
     max-width: 945px;
