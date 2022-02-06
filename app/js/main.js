@@ -1,6 +1,3 @@
-// $(function(){
-
-// });
 // Широина сайта,чтоб не было дерганья при открытии меню
 document.body.style.maxWidth = document.body.scrollWidth + "px";
 
@@ -32,41 +29,47 @@ linkBack.addEventListener("click", () => {
 });
 
 // Счетчик
-const 
-      countNumberOne = document.querySelector(".about-info__num--one"),
-      countNumberTwo = document.querySelector(".about-info__num--two"),
-      countNumberThree = document.querySelector(".about-info__num--three"),
-      countNumberFour = document.querySelector(".about-info__num--four");
+const countNumberOne = document.querySelector(".about-info__num--one"),
+  countNumberTwo = document.querySelector(".about-info__num--two"),
+  countNumberThree = document.querySelector(".about-info__num--three"),
+  countNumberFour = document.querySelector(".about-info__num--four");
 function counter(ms) {
   let counter = 0;
   let interval1 = setInterval(() => {
-    countNumberFour.textContent ='0' + ++counter;
-    countNumberFour.textContent.length >= 3 ? countNumberFour.textContent = countNumberFour.textContent.slice(1) : false;
+    countNumberFour.textContent = "0" + ++counter;
+    countNumberFour.textContent.length >= 3
+      ? (countNumberFour.textContent = countNumberFour.textContent.slice(1))
+      : false;
     counter === 06 ? clearInterval(interval1) : false;
   }, ms);
   let counter1 = 0;
   let interval2 = setInterval(() => {
-    countNumberTwo.textContent ='0' + ++counter1;
-    countNumberTwo.textContent.length >= 3 ? countNumberTwo.textContent = countNumberTwo.textContent.slice(1) : false;
+    countNumberTwo.textContent = "0" + ++counter1;
+    countNumberTwo.textContent.length >= 3
+      ? (countNumberTwo.textContent = countNumberTwo.textContent.slice(1))
+      : false;
     counter1 === 43 ? clearInterval(interval2) : false;
   }, ms);
   let counter2 = 0;
   let interval3 = setInterval(() => {
-    countNumberThree.textContent = '0' + ++counter2;
-    countNumberThree.textContent.length >= 3 ? countNumberThree.textContent = countNumberThree.textContent.slice(1) : false;
+    countNumberThree.textContent = "0" + ++counter2;
+    countNumberThree.textContent.length >= 3
+      ? (countNumberThree.textContent = countNumberThree.textContent.slice(1))
+      : false;
     counter2 === 12 ? clearInterval(interval3) : false;
   }, ms);
   let counter3 = 0;
   let interval4 = setInterval(() => {
-    countNumberFour.textContent = '0' + ++counter3;
-    countNumberFour.textContent.length >= 3 ? countNumberFour.textContent = countNumberFour.textContent.slice(1) : false;
+    countNumberFour.textContent = "0" + ++counter3;
+    countNumberFour.textContent.length >= 3
+      ? (countNumberFour.textContent = countNumberFour.textContent.slice(1))
+      : false;
     counter3 === 57 ? clearInterval(interval4) : false;
   }, ms);
 }
-if(document.querySelector('.about-info__num')){
+if (document.querySelector(".about-info__num")) {
   counter(50);
 }
-  
 
 // Слайдер
 new Swiper(".slider-work", {
@@ -80,7 +83,7 @@ new Swiper(".slider-work", {
     },
     1720: {
       slidesPerView: 4,
-    }
+    },
   },
   pagination: {
     el: ".swiper-pagination",
@@ -223,6 +226,14 @@ if (headerMenu.closest(".heade-menu--light")) {
 } else if (headerMenu.closest(".heade-menu--blue")) {
   menuSumb.style.fill = "#c9bcae";
 }
+
+// Анимация
+AOS.init({
+  easing: "linear",
+  disable: "mobile",
+  duration: 600,
+  // offset: 200,
+});
 
 // Подлкючение Яндекс карты
 if (document.querySelector("#map") || document.querySelector("#map-page")) {

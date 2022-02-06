@@ -37,7 +37,6 @@
       left: 0;
       width: 100%;
       height: 100%;
-      // background-color: rgba($color: $white, $alpha: .1);
       box-shadow: inset 0 0 0 3000px rgba(150, 150, 150, 0.192);
       backdrop-filter:  blur(5px);
       z-index: -2;
@@ -56,8 +55,6 @@
   }
   &__content {
     max-width: 480px;
-    // padding-top: 471px;
-    // padding-bottom: 276px;
     padding-top: 310px;
     padding-bottom: 230px;
     text-align: center;

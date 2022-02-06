@@ -1,8 +1,6 @@
 .advantages {
   padding-bottom: 260px;
-  &__container {
 
-  }
   &__subtitle {
     margin-bottom: 28px;
   }
@@ -13,7 +11,7 @@
   }
   &__items {
     display: grid;
-    grid-template-columns: repeat(3, 1fr );
+    grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 1fr 1fr;
     grid-gap: 100px;
   }
@@ -25,24 +23,24 @@
     text-align: center;
     &::before {
       position: absolute;
-      content: '';
+      content: "";
       top: 0;
       left: 0;
-      background-image: url('../images/icons/border-top.svg');
+      background-image: url("../images/icons/border-top.svg");
       width: 30px;
       height: 30px;
     }
     &::after {
       position: absolute;
-      content: '';
+      content: "";
       bottom: 0;
       right: 0;
-      background-image: url('../images/icons/border-bottom.svg');
+      background-image: url("../images/icons/border-bottom.svg");
       width: 30px;
       height: 30px;
     }
     &:not(:nth-child(3n)) {
-    margin-right: 77px;
+      margin-right: 77px;
     }
   }
   &__img {

@@ -958,6 +958,28 @@
   .european__slider::before {
     height: 60px;
   }
+
+  // Карточки
+  .swiper-slide-active {
+    .slider-work__box {
+      bottom: 0;
+    }
+    .slider-work__title {
+      &::before {
+        opacity: 1;
+        transition: opacity 0.2s linear 1.4s;
+      }
+    }
+    .slider-work__descr {
+      transform: translateY(0px);
+      opacity: 1;
+      visibility: visible;
+    }
+    .slider-work__title-link {
+      transform: translateX(0px);
+      opacity: 1;
+    }
+  }
 }
 
 @media (max-width: 360px) {

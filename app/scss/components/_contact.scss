@@ -42,6 +42,7 @@
     padding-right: 15px;
     border: none;
     border-bottom: 1px solid rgba($color: #ccc, $alpha: 0.3);
+    border-radius: 0!important;
     transition: all 0.2s linear;
     outline: none;
     &:focus {
@@ -75,6 +76,7 @@
     background-color: transparent;
     border: none;
     border-bottom: 1px solid rgba($color: #ccc, $alpha: 0.3);
+    border-radius: 0!important;
     transition: all 0.2s linear;
     &:focus {
       border-color: $accent;
